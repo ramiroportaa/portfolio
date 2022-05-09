@@ -1,0 +1,18 @@
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+}
+h1,
+h2,
+h3{
+    font-weight: 800;
+}
+h4{
+    font-weight: 700;
+}
+p{
+    font-weight: 400;
+}
+.navbar-brand{
+    font-weight: 800;
+}
