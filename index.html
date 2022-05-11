@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Ramiro Porta | Portfolio</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
     <header class="bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark py-3 fixed-top bg-dark">
             <div class="container">
                 <a href="#" class="navbar-brand">
                     <i class="fa-solid fa-code text-danger"></i>
@@ -28,7 +28,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-9 justify-content-between m-auto px-lg-5">
+                    <ul class="nav navbar-nav me-auto mb-2 mb-lg-0 col-lg-9 justify-content-evenly m-auto">
                       <li class="nav-item">
                         <a class="nav-link" href="#aboutMe">Sobre mi</a>
                       </li>
@@ -45,15 +45,42 @@
                         <a class="nav-link" href="#projects">Proyectos</a>
                       </li>
                     </ul>
-                    <div class="">
-                        <button class="btn btn-outline-success">Contacto</button>
+                    <div>
+                        <button class="btn btn-outline-success">CONTACTO</button>
                     </div>
                 </div>
             </div>
         </nav>
+        <!-- Hero -->
+        <div class="container mt-5">
+          <div class="row align-items-center">
+            <!-- Textos -->
+            <div class="col-5 text-white">
+              <h1>Hola! Mi nombre es Ramiro Porta y estudio para ser Fullstack Developer.</h1>
+              <p class="my-4 opacity-75">Curso mis estudios en CoderHouse y Alura LATAM, ademas de algunos cursos de YouTube o Udemy que hago a modo "autodidacta".
+                Actualmente estoy certificado como FrontEnd React Developer.
+              </p>
+              <button class="btn btn-danger text-uppercase px-4 py-2">Mira mi trabajo!</button>
+            </div>
+            <!-- Imagen Perfil-->
+            <div class="col-7">
+              <div class="hero__img" style="background-image: url(./assets/img/bg-perfil.png);"></div>
+            </div>
+          </div>
+        </div>
     </header>
     <main>
-
+      <div>
+        <div id="aboutMe" class="vh-100 bg-danger text-white position-relative">
+          aboutMe
+        </div>
+        <div id="skills" class="vh-100 bg-primary text-white position-relative">
+          skills
+        </div>
+        <div id="hobbies" class="vh-100 bg-success text-white position-relative">
+          Hobbies
+        </div>
+      </div>
     </main>
     <footer>
 

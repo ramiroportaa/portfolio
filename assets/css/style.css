@@ -13,6 +13,15 @@ h4{
 p{
     font-weight: 400;
 }
+.btn{
+    font-weight: 900;
+}
 .navbar-brand{
     font-weight: 800;
+}
+.hero__img{
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
 }
