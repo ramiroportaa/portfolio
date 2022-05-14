@@ -19,6 +19,7 @@ p{
 .navbar-brand{
     font-weight: 800;
 }
+
 /* Hero */
 .hero__img{
     height: 80vh;
@@ -26,6 +27,8 @@ p{
     background-size: 80%;
     background-position: right center;
 }
+
+/* About Me */
 .aboutMe__img{
     border-radius: 8px;
     width: 80vw;
@@ -39,9 +42,16 @@ p{
 #aboutMe{
     background-color: #FDF0E9;
 }
-@media (max-width: 767px){
-    
+
+/* Skills */
+.card img{
+    width: 100%;
+    transition: 200ms ease-in-out;
 }
+.card:hover > img{
+    scale: 1.3;
+}
+
 @media (min-width: 992px) {
     .hero__img{
         background-size: 68%;
