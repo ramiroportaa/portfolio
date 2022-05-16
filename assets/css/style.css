@@ -47,7 +47,7 @@ p{
 .card{
     overflow: hidden;
 }
-.card p{
+.card__hover{
     position: absolute;
     top: -150px;
     left: 0;
@@ -64,8 +64,8 @@ p{
 .card img{
     width: 100%;
 }
-.card:hover > p{
-    top:calc(50% - 1rem);
+.card:hover > .card__hover{
+    top:calc(50% - 2rem);
 }
 .card:hover > img{
     transform: translateY(150px);
