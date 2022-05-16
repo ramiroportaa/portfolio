@@ -44,14 +44,32 @@ p{
 }
 
 /* Skills */
+.card{
+    overflow: hidden;
+}
+.card p{
+    position: absolute;
+    top: -150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.card > *{
+    transition: 400ms ease-in-out;
+}
 .card img{
     width: 100%;
-    transition: 200ms ease-in-out;
+}
+.card:hover > p{
+    top:calc(50% - 1rem);
 }
 .card:hover > img{
-    scale: 1.3;
+    transform: translateY(150px);
 }
-
 @media (min-width: 992px) {
     .hero__img{
         background-size: 68%;
