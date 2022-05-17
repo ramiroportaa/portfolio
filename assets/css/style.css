@@ -44,8 +44,32 @@ p{
 }
 
 /* Skills */
-.card{
+.skills__list{
+    padding: 3rem 0;
+}
+.hexagon {
+    height: 20rem;
+    margin: -3rem 0;
     overflow: hidden;
+    transform: rotate(120deg);
+    visibility: hidden;
+    width: 10rem;
+}
+.hexagon-1 {
+    height: 100%;
+    overflow: hidden;
+    transform: rotate(-60deg);
+    width: 100%;
+}
+.hexagon-2 {
+    height: 100%;
+    transform: rotate(-60deg); 
+    visibility: visible ;
+    width: 100%;
+}
+.card{
+    border: none;
+    overflow-y: hidden;
 }
 .card__hover{
     position: absolute;
@@ -70,8 +94,31 @@ p{
 .card:hover > img{
     transform: translateY(150px);
 }
-@media (min-width: 992px) {
+@media (max-width: 575px){
+    :root{
+        font-size: 14px;
+    }
+    .skills__list > div:nth-child(3n){
+        width: 100%;
+        margin: -3.75rem 0;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
     .hero__img{
         background-size: 68%;
+    }
+    .hexagon {
+        margin: -5.5rem 0;
+    }
+    .card__hover{
+        font-size: 1.25rem;
+    }
+    .card:hover > .card__hover{
+        top:calc(50% - 1.75rem);
+    }
+}
+@media (min-width:1200px){
+    .hexagon {
+        margin: -4.75rem 0;
     }
 }
