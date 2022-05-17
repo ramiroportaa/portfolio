@@ -69,7 +69,19 @@ p{
 }
 .card{
     border: none;
-    overflow-y: hidden;
+    overflow-y: hidden;  
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../img/animated-bg.gif);
+    background-position: center;
+    background-size: cover;
+    opacity: .3;
 }
 .card__hover{
     position: absolute;
@@ -87,6 +99,7 @@ p{
 }
 .card img{
     width: 100%;
+    z-index: 1;
 }
 .card:hover > .card__hover{
     top:calc(50% - 2rem);
