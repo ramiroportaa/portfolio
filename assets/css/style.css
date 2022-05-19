@@ -24,7 +24,7 @@ p{
 .hero__img{
     height: 80vh;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 68%;
     background-position: right center;
 }
 
@@ -43,8 +43,8 @@ p{
     background-color: #FDF0E9;
 }
 
-/* Skills */
-.skills__list{
+/* Skills & Hobbies */
+.hexagon__list{
     padding: 3rem 0;
 }
 .hexagon {
@@ -66,10 +66,6 @@ p{
     transform: rotate(-60deg); 
     visibility: visible ;
     width: 100%;
-}
-.card{
-    border: none;
-    overflow-y: hidden;  
 }
 .card::before{
     content: "";
@@ -104,22 +100,28 @@ p{
 .card:hover > .card__hover{
     top:calc(50% - 2rem);
 }
-.card:hover > img{
+.card:hover > img, .card:hover > .ico{
     transform: translateY(150px);
+}
+.ico{
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 3.5rem;
+    z-index: 1;
 }
 @media (max-width: 575px){
     :root{
         font-size: 14px;
     }
-    .skills__list > div:nth-child(3n){
+    .hexagon__list > div:nth-child(3n){
         width: 100%;
         margin: -3.75rem 0;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-    .hero__img{
-        background-size: 68%;
-    }
     .hexagon {
         margin: -5.5rem 0;
     }
