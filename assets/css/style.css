@@ -69,7 +69,7 @@ p{
 .burbuja:nth-child(5){
     width: 70px;
     height: 70px;
-    left: 95%;
+    left: 90%;
     animation-delay: 1s;
 }
 @keyframes burbujas{
@@ -180,6 +180,12 @@ p{
     .hexagon__list > div:nth-child(3n){
         width: 100%;
         margin: -3.75rem 0;
+    }
+    .burbuja{
+        scale: -50%;
+    }
+    .burbuja:nth-child(5){
+        display: none;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
