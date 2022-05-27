@@ -173,6 +173,21 @@ p{
     font-size: 3.5rem;
     z-index: 1;
 }
+
+/* Formacion */
+#training{
+    background-color: #FDF0E9;
+}
+.box{
+    width: 20vw;
+    height: 15vw;
+    max-width: 400px;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: white;
+    padding: 0 2rem;
+}
+
 @media (max-width: 575px){
     :root{
         font-size: 14px;
