@@ -185,6 +185,9 @@ p{
     background-color: white;
     padding: 0 2rem;
 }
+.box > img{
+    cursor: pointer;
+}
 
 @media (max-width: 575px){
     :root{
