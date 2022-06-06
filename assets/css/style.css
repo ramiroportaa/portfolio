@@ -193,6 +193,15 @@ p{
     cursor: pointer;
 }
 
+/* Contacto */
+.contactMe__social > p > a > i:hover{
+    color: #dc3545;
+}
+.contactMe__social > p > a{
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width: 575px){
     :root{
         font-size: 14px;
