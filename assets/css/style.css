@@ -194,6 +194,9 @@ p{
 }
 
 /* Contacto */
+#contactMe{
+    background-color: #FDF0E9;
+}
 .contactMe__social > p > a > i:hover{
     color: #dc3545;
 }
