@@ -1,723 +1,564 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google fonts: Epilogue -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Own CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ramiro Porta | Portfolio</title>
-</head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
-    <header class="bg-dark sticky-top">
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark py-3 bg-dark">
-            <div class="container">
-                <a href="#" class="navbar-brand">
-                    <i class="fa-solid fa-code text-danger"></i>
-                    Ramiro Porta
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav me-auto mb-2 mb-lg-0 col-lg-9 justify-content-evenly m-auto">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#aboutMe">Sobre mi</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#hobbies">Hobbies</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#training">Formación</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#projects">Proyectos</a>
-                      </li>
-                    </ul>
-                    <div>
-                        <button class="btn btn-outline-success"><a href="#contactMe">CONTACTO</a></button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-      <!-- Hero -->
-      <section class="bg-dark">
-        <div class="container col-xxl-10 m-auto py-5 py-sm-0">
-          <div class="row align-items-center">
-            <!-- Textos -->
-            <div class="col-md-5 text-white">
-              <h1 class="typewriter">Hola! Soy Ramiro y estudio para ser Fullstack Developer.</h1>
-              <p class="my-4 opacity-75">Curso mis estudios en CoderHouse y Alura LATAM, ademas de algunos cursos de YouTube o Udemy que hago a modo "autodidacta".
-                Actualmente estoy certificado como FrontEnd React Developer.
-              </p>
-              <button class="btn btn-danger text-uppercase px-4 py-2"><a href="#projects">Mira mi trabajo!</a></button>
-              <div class="mt-4 col-12 d-flex text-center">
-                <div class="me-3">
-                  <i class="fa-brands fa-github"></i>
-                  <a class="link-secondary ms-1" href="https://github.com/ramiroportaa" target="_blank" rel="noopener noreferrer">Github</a>
-                </div>
-                <div class="me-3">
-                  <i class="fa-brands fa-linkedin"></i>
-                  <a class="link-secondary ms-1" href="https://www.linkedin.com/in/ramiroportaa/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                </div>
-                <div class="me-3">
-                  <i class="fa-brands fa-instagram"></i>
-                  <a class="link-secondary ms-1" href="https://www.instagram.com/ramiroportaa/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                </div>
-                <div>
-                  <i class="fa-solid fa-file-pdf"></i>
-                  <a class="link-secondary ms-1" href="http://" target="_blank" rel="noopener noreferrer">Curriculum</a>
-                </div>
-              </div>
-            </div>
-            <!-- Imagen Perfil-->
-            <div class="col-md-7 d-none d-md-block">
-              <div class="hero__img" style="background-image: url(./assets/img/bg-perfil.png);"></div>
-            </div>
-          </div>
-        </div>
-        <div class="burbujas">
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-        </div>
-      </section>
-      <section id="aboutMe">
-        <div class="position-relative py-5">
-          <div class="container mt-md-5 col-xxl-10 m-auto">
-            <div class="row h-100 justify-content-between align-items-center">
-              <div class="col-md-5 d-flex justify-content-center">
-                <div class="aboutMe__img d-none d-md-block" style="background-image: url(./assets/img/aboutMe-img.jpg);"></div>
-              </div>
-              <div class="col-md-7 pe-3">
-                <h2>Sobre Mi</h2>
-                <p class="mt-4 opacity-75">Mi nombre es Ramiro Porta, soy de la provincia de San Juan (Argentina) y me encanta la programación! <br> Comence en este mundo a mis 23 años y quedé encantado. Actualmente curso mis estudios en CoderHouse y Alura LATAM, ademas de algunos cursos de YouTube o Udemy que hago a modo "autodidacta".<br>En cuanto a experiencia laboral, solo tuve como Frontend al participar en 2 ocaciones en la realización de paginas web estaticas (html, css, js, bootstrap) pero espero con ansias nuevas oportunidades y aprendizajes. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="skills" class="bg-dark text-white">
-        <div class="container col-xxl-10 m-auto py-5 position-relative">
-          <h1 class="text-center">Skills</h1>
-          <div class="hexagon__list row justify-content-center align-items-center overflow-hidden">
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">HTML 5</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star-half-alt small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-html.png" alt="HTML">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">CSS 3</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star-half-alt small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-css.png" alt="CSS">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">JAVASCRIPT</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-js.png" alt="JAVASCRIPT">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">BOOTSTRAP</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star-half-alt small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-bootstrap.png" alt="BOOTSTRAP">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">SASS</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star-half-alt small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-sass.png" alt="SASS">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">NODE JS</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star-half-alt small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-nodejs.png" alt="NODE JS">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">REACT</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-react.png" alt="REACT">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">EXPRESS</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-express.png" alt="EXPRESS">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">MONGO DB</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-mongodb.png" alt="MONGO DB">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">GIT</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star-half-alt small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-git.png" alt="GIT">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark">
-                      <p class="m-0">TRELLO</p>
-                      <ul class="list-inline text-warning">
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
-                        <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
-                      </ul>
-                    </div>
-                    <img class="d-block m-auto img-fluid" src="./assets/img/logo-trello.png" alt="TRELLO">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="hobbies" class="bg-dark text-white">
-        <div class="container col-xxl-10 m-auto py-5 position-relative">
-          <h1 class="text-center">Hobbies</h1>
-          <div class="hexagon__list row justify-content-center align-items-center overflow-hidden">
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark pt-3">
-                      <p class="m-0">VIDEOJUEGOS</p>
-                    </div>
-                    <div class="ico d-flex m-auto bg-danger img-fluid">
-                      <i class="fa-solid fa-gamepad d-block m-auto"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark pt-3">
-                      <p class="m-0">FUTBOL</p>
-                    </div>
-                    <div class="ico d-flex m-auto bg-danger img-fluid">
-                      <i class="fa-solid fa-futbol d-block m-auto"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark pt-3">
-                      <p class="m-0">PADEL</p>
-                    </div>
-                    <div class="ico d-flex m-auto bg-danger img-fluid">
-                      <i class="fa-solid fa-table-tennis-paddle-ball d-block m-auto"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark pt-3">
-                      <p class="m-0">VIAJAR</p>
-                    </div>
-                    <div class="ico d-flex m-auto bg-danger img-fluid">
-                      <i class="fa-solid fa-plane d-block m-auto"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
-              <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
-                <div class="hexagon-1">
-                  <div class="hexagon-2 card p-4">
-                    <div class="card__hover text-dark pt-3">
-                      <p class="m-0">CAMPO</p>
-                    </div>
-                    <div class="ico d-flex m-auto bg-danger img-fluid">
-                      <i class="fa-solid fa-mountain-sun d-block m-auto"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="training" class="text-dark">
-        <div class="container col-xxl-10 m-auto py-5 position-relative">
-          <h1 class="text-center">Formación académica</h1>
-          <h2 class="mt-5 text-center">Programación</h2>
-          <div class="row mt-5 d-flex justify-content-center">
-            <div class="col-lg-3 col-6 col-md-4 my-1">
-              <div class="box d-flex justify-content-center align-items-center">
-                <img data-tilt data-tilt-scale="1.05" class="w-75" src="./assets/img/training-coder.png" alt="">
-              </div>
-              <div class="w-100">
-                <p class="m-0 mt-3 text-uppercase">Programación Backend <br> [En curso]</p>
-                <p>2022 | CoderHouse</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-6 col-md-4 my-1">
-              <div class="box d-flex justify-content-center align-items-center">
-                <img data-tilt data-tilt-scale="1.05" class="w-75" src="./assets/img/training-alura.webp" alt="Formación Frontend" data-bs-toggle="modal" data-bs-target="#box2">
-              </div>
-              <div class="w-100">
-                <p class="m-0 mt-3 text-uppercase">Formación Frontend <br> [Finalizado]</p>
-                <p>2022 | Alura</p>
-              </div>
-              <div class="modal fade" id="box2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Certificado</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <img class="img-fluid" src="./assets/img/Cert-Formacion-Frontend.jpg" alt="Formación Frontend">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-6 col-md-4 my-1">
-              <div class="box d-flex justify-content-center align-items-center">
-                <img data-tilt data-tilt-scale="1.05" class="w-75" src="./assets/img/training-alura.webp" alt="Principiante en programación" data-bs-toggle="modal" data-bs-target="#box3">
-              </div>
-              <div class="w-100">
-                <p class="m-0 mt-3 text-uppercase">Principiante en programación <br> [Finalizado]</p>
-                <p>2022 | Alura</p>
-              </div>
-              <div class="modal fade" id="box3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Certificado</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <img class="img-fluid" src="./assets/img/Cert-Principiante-en-programacion.jpg" alt="Principiante en programación">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-6 col-md-4 my-1">
-              <div class="box d-flex justify-content-center align-items-center">
-                <img data-tilt data-tilt-scale="1.05" class="w-75" src="./assets/img/training-coder.png" alt="Desarrollo FrontEnd React" data-bs-toggle="modal" data-bs-target="#box4">
-              </div>
-              <div class="w-100">
-                <p class="m-0 mt-3 text-uppercase">DESARROLLO FRONTEND REACT <br> [Finalizado]</p>
-                <p>2021 | CoderHouse</p>
-              </div>
-              <div class="modal fade" id="box4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Certificado</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <img class="img-fluid" src="./assets/img/Cert-Desarrollo-Frontend-React.png" alt="Desarrollo FrontEnd React">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="mt-5 text-center">Otros</h2>
-          <div class="row mt-5 d-flex justify-content-center">
-            <div class="col-lg-3 col-6 col-md-4 my-1">
-              <div class="box d-flex justify-content-center align-items-center">
-                <img data-tilt data-tilt-scale="1.05" class="w-75" src="./assets/img/training-UNSJ.jpg" alt="">
-              </div>
-              <div class="w-100">
-                <p class="m-0 mt-3 text-uppercase">CONTADOR PUBLICO <br> [EN CURSO]</p>
-                <p>2016-Actualidad | Universidad Nacional de San Juan</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-6 col-md-4 my-1">
-              <div class="box d-flex justify-content-center align-items-center">
-                <img data-tilt data-tilt-scale="1.05" class="w-75" src="./assets/img/training-apas.png" alt="">
-              </div>
-              <div class="w-100">
-                <p class="m-0 mt-3 text-uppercase">Productor Asesor de Seguros <br> [Finalizado]</p>
-                <p>2017 | APAS Cuyo</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projects" class="bg-dark text-white">
-        <div class="container col-xxl-10 m-auto py-5 position-relative">
-          <h1 class="text-center">Proyectos</h1>
-          <div class="row mt-5">
-            <div class="col-lg-8">
-              <img class="img-fluid" src="./assets/img/projects-sywporta.jpg" alt="SyW PORTA proyecto web estatica">
-            </div>
-            <div class="col-lg-4 d-block m-lg-auto mt-3">
-              <h4 class="fw-bold">Web estatica para productor asesor de seguros</h4>
-              <p>Proyecto Final de curso "Desarrollo web" | CoderHouse</p>
-              <div class="d-flex mb-3 display-6">
-                <i class="fa-brands fa-html5 me-2"></i>
-                <i class="fa-brands fa-css3-alt mx-2"></i>
-                <i class="fa-brands fa-bootstrap mx-2"></i>
-                <i class="fa-brands fa-sass mx-2"></i>
-              </div>
-              <div>
-                <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/sywporta-seguros" target="_blank" rel="noopener noreferrer">Repositorio</a></button>
-                <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/sywporta-seguros/" target="_blank" rel="noopener noreferrer">Ver demo</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-lg-8 order-lg-1">
-              <img class="img-fluid" src="./assets/img/projects-eshop-js.jpg" alt="Simulador de e-shop de indumentaria">
-            </div>
-            <div class="col-lg-4 d-block m-lg-auto mt-3">
-              <h4 class="fw-bold">Simulador de e-shop de indumentaria</h4>
-              <p>Proyecto Final de curso "Javascript" | CoderHouse</p>
-              <div class="d-flex mb-3 display-6">
-                <i class="fa-brands fa-js-square me-2"></i>
-                <i class="fa-brands fa-html5 mx-2"></i>
-                <i class="fa-brands fa-css3-alt mx-2"></i>
-                <i class="fa-brands fa-bootstrap mx-2"></i>
-                <i class="fa-brands fa-sass mx-2"></i>
-              </div>
-              <div>
-                <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/proyectoFinal-JS" target="_blank" rel="noopener noreferrer">Repositorio</a></button>
-                <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/proyectoFinal-JS/" target="_blank" rel="noopener noreferrer">Ver demo</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-lg-8">
-              <img class="img-fluid" src="./assets/img/projects-glam.jpg" alt="Pagina web para emprendimiento de mates.">
-            </div>
-            <div class="col-lg-4 d-block m-lg-auto mt-3">
-              <h4 class="fw-bold">Página web estática para emprendimiento de mates.</h4>
-              <p>Participación en proyecto Real | CoderHouse</p>
-              <div class="d-flex mb-3 display-6">
-                <i class="fa-brands fa-html5 me-2"></i>
-                <i class="fa-brands fa-css3-alt mx-2"></i>
-                <i class="fa-brands fa-bootstrap mx-2"></i>
-                <i class="fa-brands fa-js-square mx-2"></i>
-              </div>
-              <div>
-                <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/Glam-Mates" target="_blank" rel="noopener noreferrer">Repositorio</a></button>
-                <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/Glam-Mates/" target="_blank" rel="noopener noreferrer">Ver demo</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-lg-8 order-lg-1">
-              <img class="img-fluid" src="./assets/img/projects-react.gif" alt="E-commerce de indumentaria en REACTJS">
-            </div>
-            <div class="col-lg-4 d-block m-lg-auto mt-3">
-              <h4 class="fw-bold">E-commerce de indumentaria en REACTJS</h4>
-              <p>Proyecto Final de curso "REACTJS" | CoderHouse</p>
-              <div class="d-flex mb-3 display-6">
-                <i class="fa-brands fa-react me-2"></i>
-                <i class="fa-brands fa-js-square mx-2"></i>
-                <i class="fa-brands fa-html5 mx-2"></i>
-                <i class="fa-brands fa-css3-alt mx-2"></i>
-                <i class="fa-brands fa-bootstrap mx-2"></i>
-              </div>
-              <div>
-                <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/HeyBro-Porta" target="_blank" rel="noopener noreferrer">Repositorio</a></button>
-                <button class="btn btn-danger"><a href="https://github.com/ramiroportaa/HeyBro-Porta" target="_blank" rel="noopener noreferrer">Ver demo</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-lg-8">
-              <img class="img-fluid" src="./assets/img/projects-encriptador.jpg" alt="Encriptador y desencriptador de frases con Javascript.">
-            </div>
-            <div class="col-lg-4 d-block m-lg-auto mt-3">
-              <h4 class="fw-bold">Encriptador y desencriptador</h4>
-              <p>Challenge del curso "Principiante en programación" de Alura</p>
-              <div class="d-flex mb-3 display-6">
-                <i class="fa-brands fa-html5 me-2"></i>
-                <i class="fa-brands fa-css3-alt mx-2"></i>
-                <i class="fa-brands fa-bootstrap mx-2"></i>
-                <i class="fa-brands fa-js-square mx-2"></i>
-              </div>
-              <div>
-                <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/encriptador-challenge" target="_blank" rel="noopener noreferrer">Repositorio</a></button>
-                <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/encriptador-challenge/" target="_blank" rel="noopener noreferrer">Ver demo</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-lg-8 order-lg-1">
-              <img class="img-fluid" src="./assets/img/projects-ahorcado.gif" alt="Juego del ahorcado en Javascript">
-            </div>
-            <div class="col-lg-4 d-block m-lg-auto mt-3">
-              <h4 class="fw-bold">Juego del Ahorcado</h4>
-              <p>Challenge del curso "Principiante en programación" de Alura</p>
-              <div class="d-flex mb-3 display-6">
-                <i class="fa-brands fa-js-square me-2"></i>
-                <i class="fa-brands fa-html5 mx-2"></i>
-                <i class="fa-brands fa-css3-alt mx-2"></i>
-              </div>
-              <div>
-                <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/challenge-ahorcado" target="_blank" rel="noopener noreferrer">Repositorio</a></button>
-                <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/challenge-ahorcado/" target="_blank" rel="noopener noreferrer">Ver demo</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-lg-8">
-              <img class="img-fluid" src="./assets/img/projects-chat.png" alt="Chat desarrollado con websockets en nodejs.">
-            </div>
-            <div class="col-lg-4 d-block m-lg-auto mt-3">
-              <h4 class="fw-bold">Mini-desafio de chat con websocket</h4>
-              <p>Desafio del curso "Backend" de Coderhouse</p>
-              <div class="d-flex mb-3 display-6">
-                <i class="fa-brands fa-html5 me-2"></i>
-                <i class="fa-brands fa-css3-alt mx-2"></i>
-                <i class="fa-brands fa-bootstrap mx-2"></i>
-                <i class="fa-brands fa-js-square mx-2"></i>
-                <i class="fa-brands fa-node mx-2"></i>
-              </div>
-              <div>
-                <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/websocket-chat" target="_blank" rel="noopener noreferrer">Repositorio</a></button>
-                <button class="btn btn-danger"><a href="https://torch-political-prince.glitch.me/" target="_blank" rel="noopener noreferrer">Ver demo</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-lg-8 order-lg-1">
-              <img class="img-fluid" src="./assets/img/projects-aurora.jpg" alt="Página web de Aurora Santeria">
-            </div>
-            <div class="col-lg-4 d-block m-lg-auto mt-3">
-              <h4 class="fw-bold">Página web estática para emprendimiento</h4>
-              <p>Participación en proyecto Real | CoderHouse</p>
-              <div class="d-flex mb-3 display-6">
-                <i class="fa-brands fa-js-square me-2"></i>
-                <i class="fa-brands fa-html5 mx-2"></i>
-                <i class="fa-brands fa-css3-alt mx-2"></i>
-                <i class="fa-brands fa-bootstrap mx-2"></i>
-              </div>
-              <div>
-                <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/aurora-santeria" target="_blank" rel="noopener noreferrer">Repositorio</a></button>
-                <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/aurora-santeria/" target="_blank" rel="noopener noreferrer">Ver demo</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contactMe" class="text-dark">
-        <div class="container col-xxl-10 m-auto py-5 position-relative">
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-lg-6">
-              <form class="w-lg-75 d-block m-auto bg-dark text-white p-3 rounded" action="https://formsubmit.co/ramiroportaa@gmail.com" method="POST">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nombre y apellido</label>
-                  <input type="text" class="form-control" id="name" name="name">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">E-mail</label>
-                  <input type="email" class="form-control" id="email" name="email">
-                </div>
-                <div class="mb-3">
-                  <label for="subject" class="form-label">Asunto</label>
-                  <input type="text" class="form-control" id="subject" name="subject">
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Mensaje</label>
-                  <textarea class="form-control" id="message" name="message"></textarea>
-                </div>
-                <div class="text-end">
-                  <button type="submit" class="btn btn-danger px-4">Enviar</button>
-                </div>
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_next" value="https://ramiroportaa.github.io/portfolio/">
-              </form>
-            </div>
-            <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
-              <h1 class="mb-3">Contacto</h1>
-              <p>¿Quieres contactarme? <br>
-                Completá el formulario y me pondré en contacto lo antes posible! <br>
-                Tambien podes escribirme por alguna de las siguientes redes:
-              </p>
-              <div class="contactMe__social">
-                <p class="d-flex align-items-center"><a href="https://www.linkedin.com/in/ramiroportaa/" target="_blank" rel="noopener noreferrer"><i data-tilt data-tilt-scale="1.1" class="fa-brands fa-linkedin display-6 me-2"></i></a> www.linkedin.com/in/ramiroportaa</p>
-                <p class="d-flex align-items-center"><a href="https://www.instagram.com/ramiroportaa/" target="_blank" rel="noopener noreferrer"><i data-tilt data-tilt-scale="1.1" class="fa-brands fa-instagram-square display-6 me-2"></i></a> @ramiroportaa</p>
-                <p class="d-flex align-items-center"><a href="mailto:ramiroportaa@gmail.com" target="_blank" rel="noopener noreferrer"><i data-tilt data-tilt-scale="1.1" class="fa-solid fa-envelope display-6 me-2"></i></a> ramiroportaa@gmail.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="bg-dark py-4 text-white">
-      <p class="text-center m-0">Desarrollado por Ramiro Porta | 2022</p>
-    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./assets/js/index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google fonts: Epilogue -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Own CSS-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Ramiro Porta | Portfolio</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+  <header class="bg-dark sticky-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark py-3 bg-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <i class="fa-solid fa-code text-danger"></i>
+          Ramiro Porta
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav me-auto mb-2 mb-lg-0 col-lg-9 justify-content-evenly m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#aboutMe">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#training">Formación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyectos</a>
+            </li>
+          </ul>
+          <div>
+            <button class="btn btn-outline-success"><a href="#contactMe">CONTACTO</a></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero -->
+    <section class="bg-dark">
+      <div class="container col-xxl-10 m-auto py-5 py-sm-0">
+        <div class="row align-items-center">
+          <!-- Textos -->
+          <div class="col-md-5 text-white">
+            <h1 class="typewriter">Hola! Soy Ramiro y soy trainee Fullstack Web Developer.</h1>
+            <p class="my-4 opacity-75">Principalmente programo bajo el lenguaje Javascript.
+              En este portfolio veras los proyectos que voy realizando a modo de experiencia y aprendizaje.
+            </p>
+            <button class="btn btn-danger text-uppercase px-4 py-2"><a href="#projects">Mira mi trabajo!</a></button>
+            <div class="mt-4 col-12 d-flex text-center">
+              <div class="me-3">
+                <i class="fa-brands fa-github"></i>
+                <a class="link-secondary ms-1" href="https://github.com/ramiroportaa" target="_blank"
+                  rel="noopener noreferrer">Github</a>
+              </div>
+              <div class="me-3">
+                <i class="fa-brands fa-linkedin"></i>
+                <a class="link-secondary ms-1" href="https://www.linkedin.com/in/ramiroportaa/" target="_blank"
+                  rel="noopener noreferrer">Linkedin</a>
+              </div>
+              <div class="me-3">
+                <i class="fa-brands fa-instagram"></i>
+                <a class="link-secondary ms-1" href="https://www.instagram.com/ramiroportaa/" target="_blank"
+                  rel="noopener noreferrer">Instagram</a>
+              </div>
+              <div class="d-none">
+                <i class="fa-solid fa-file-pdf"></i>
+                <a class="link-secondary ms-1" href="http://" target="_blank" rel="noopener noreferrer">Curriculum</a>
+              </div>
+            </div>
+          </div>
+          <!-- Imagen Perfil-->
+          <div class="col-md-7 d-none d-md-block">
+            <div class="hero__img" style="background-image: url(./assets/img/bg-perfil.png);"></div>
+          </div>
+        </div>
+      </div>
+      <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+      </div>
+    </section>
+    <section id="aboutMe">
+      <div class="position-relative py-5">
+        <div class="container mt-md-5 col-xxl-10 m-auto">
+          <div class="row h-100 justify-content-between align-items-center">
+            <div class="col-md-5 d-flex justify-content-center">
+              <div class="aboutMe__img d-none d-md-block" style="background-image: url(./assets/img/aboutMe-img.jpg);">
+              </div>
+            </div>
+            <div class="col-md-7 pe-3">
+              <h2>Sobre Mi</h2>
+              <p class="mt-4 opacity-75">Mi nombre es Ramiro Porta, soy de la provincia de San Juan (Argentina) y me
+                encanta la programación! <br> Comencé en este mundo a mis 23 años y quedé encantado. Me considero una
+                persona perseverante y con ganas de hacer algo todo el tiempo.
+                Hoy sigo estudiando y tratando de generar experiencia con proyectos de practica, buscando nuevas
+                oportunidades y aprendizaje. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="bg-dark text-white">
+      <div class="container col-xxl-10 m-auto py-5 position-relative">
+        <h1 class="text-center">Skills</h1>
+        <div id="skills-list" class="hexagon__list row justify-content-center align-items-center overflow-hidden">
+          <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+            <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
+              <div class="hexagon-1">
+                <div class="hexagon-2 card p-4">
+                  <div class="card__hover text-dark">
+                    <p class="m-0">HTML 5</p>
+                    <ul class="list-inline text-warning">
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star-half-alt small"></i></li>
+                    </ul>
+                  </div>
+                  <img class="d-block m-auto img-fluid" src="./assets/img/logo-html.png" alt="HTML">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+            <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
+              <div class="hexagon-1">
+                <div class="hexagon-2 card p-4">
+                  <div class="card__hover text-dark">
+                    <p class="m-0">CSS 3</p>
+                    <ul class="list-inline text-warning">
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star-half-alt small"></i></li>
+                      <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
+                    </ul>
+                  </div>
+                  <img class="d-block m-auto img-fluid" src="./assets/img/logo-css.png" alt="CSS">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+            <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
+              <div class="hexagon-1">
+                <div class="hexagon-2 card p-4">
+                  <div class="card__hover text-dark">
+                    <p class="m-0">JAVASCRIPT</p>
+                    <ul class="list-inline text-warning">
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="fas fa-star small"></i></li>
+                      <li class="list-inline-item m-0"><i class="far fa-star small"></i></li>
+                    </ul>
+                  </div>
+                  <img class="d-block m-auto img-fluid" src="./assets/img/logo-js.png" alt="JAVASCRIPT">
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+    <section id="hobbies" class="bg-dark text-white">
+      <div class="container col-xxl-10 m-auto py-5 position-relative">
+        <h1 class="text-center">Hobbies</h1>
+        <div class="hexagon__list row justify-content-center align-items-center overflow-hidden">
+          <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+            <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
+              <div class="hexagon-1">
+                <div class="hexagon-2 card p-4">
+                  <div class="card__hover text-dark pt-3">
+                    <p class="m-0">VIDEOJUEGOS</p>
+                  </div>
+                  <div class="ico d-flex m-auto bg-danger img-fluid">
+                    <i class="fa-solid fa-gamepad d-block m-auto"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+            <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
+              <div class="hexagon-1">
+                <div class="hexagon-2 card p-4">
+                  <div class="card__hover text-dark pt-3">
+                    <p class="m-0">FUTBOL</p>
+                  </div>
+                  <div class="ico d-flex m-auto bg-danger img-fluid">
+                    <i class="fa-solid fa-futbol d-block m-auto"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+            <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
+              <div class="hexagon-1">
+                <div class="hexagon-2 card p-4">
+                  <div class="card__hover text-dark pt-3">
+                    <p class="m-0">PADEL</p>
+                  </div>
+                  <div class="ico d-flex m-auto bg-danger img-fluid">
+                    <i class="fa-solid fa-table-tennis-paddle-ball d-block m-auto"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+            <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
+              <div class="hexagon-1">
+                <div class="hexagon-2 card p-4">
+                  <div class="card__hover text-dark pt-3">
+                    <p class="m-0">VIAJAR</p>
+                  </div>
+                  <div class="ico d-flex m-auto bg-danger img-fluid">
+                    <i class="fa-solid fa-plane d-block m-auto"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+            <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="hexagon">
+              <div class="hexagon-1">
+                <div class="hexagon-2 card p-4">
+                  <div class="card__hover text-dark pt-3">
+                    <p class="m-0">CAMPO</p>
+                  </div>
+                  <div class="ico d-flex m-auto bg-danger img-fluid">
+                    <i class="fa-solid fa-mountain-sun d-block m-auto"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="training" class="text-dark">
+      <div class="container col-xxl-10 m-auto py-5 position-relative">
+        <h1 class="text-center">Formación académica</h1>
+        <h2 class="mt-5 text-center">Programación</h2>
+        <div id="formacion-programacion" class="row mt-5 d-flex justify-content-center">
+          <div class="col-lg-3 col-6 col-md-4 my-1">
+            <div class="box d-flex justify-content-center align-items-center">
+              <img data-tilt data-tilt-scale="1.05" class="w-75" src="./assets/img/training-coder.png" alt="" data-bs-toggle="modal" data-bs-target="#box1">
+            </div>
+            <div class="w-100">
+              <p class="m-0 mt-3 text-uppercase">Programación Backend <br> [FINALIZADO]</p>
+              <p>2022 | CoderHouse</p>
+            </div>
+            <div class="modal fade" id="box1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Certificado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-fluid" src="./assets/img/Cert-Desarrollo-Backend-NodeJs.png" alt="Formación Backend">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-5 text-center">Otros</h2>
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="col-lg-3 col-6 col-md-4 my-1">
+            <div class="box d-flex justify-content-center align-items-center">
+              <img data-tilt data-tilt-scale="1.05" class="w-75" src="./assets/img/training-UNSJ.jpg" alt="">
+            </div>
+            <div class="w-100">
+              <p class="m-0 mt-3 text-uppercase">CONTADOR PUBLICO <br> [EN CURSO]</p>
+              <p>2016-Actualidad | Universidad Nacional de San Juan</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 col-md-4 my-1">
+            <div class="box d-flex justify-content-center align-items-center">
+              <img data-tilt data-tilt-scale="1.05" class="w-75" src="./assets/img/training-apas.png" alt="">
+            </div>
+            <div class="w-100">
+              <p class="m-0 mt-3 text-uppercase">Productor Asesor de Seguros <br> [Finalizado]</p>
+              <p>2017 | APAS Cuyo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="bg-dark text-white">
+      <div class="pt-5">
+        <h1 class="text-center">Proyectos</h1>
+        <h5 class="text-center">Ultima actualización: 19/04/2023</h5>
+      </div>
+      <div id="projects-list" class="container col-xxl-10 m-auto position-relative">
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <img class="img-fluid" src="./assets/img/projects-sywporta.jpg" alt="SyW PORTA proyecto web estatica">
+          </div>
+          <div class="col-lg-4 d-block m-lg-auto mt-3">
+            <h4 class="fw-bold">Web estatica para productor asesor de seguros</h4>
+            <p>Proyecto Final de curso "Desarrollo web" | CoderHouse</p>
+            <div class="d-flex mb-3 display-6">
+              <i class="fa-brands fa-html5 me-2"></i>
+              <i class="fa-brands fa-css3-alt mx-2"></i>
+              <i class="fa-brands fa-bootstrap mx-2"></i>
+              <i class="fa-brands fa-sass mx-2"></i>
+            </div>
+            <div>
+              <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/sywporta-seguros"
+                  target="_blank" rel="noopener noreferrer">Repositorio</a></button>
+              <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/sywporta-seguros/" target="_blank"
+                  rel="noopener noreferrer">Ver demo</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-8 order-lg-1">
+            <img class="img-fluid" src="./assets/img/projects-eshop-js.jpg" alt="Simulador de e-shop de indumentaria">
+          </div>
+          <div class="col-lg-4 d-block m-lg-auto mt-3">
+            <h4 class="fw-bold">Simulador de e-shop de indumentaria</h4>
+            <p>Proyecto Final de curso "Javascript" | CoderHouse</p>
+            <div class="d-flex mb-3 display-6">
+              <i class="fa-brands fa-js-square me-2"></i>
+              <i class="fa-brands fa-html5 mx-2"></i>
+              <i class="fa-brands fa-css3-alt mx-2"></i>
+              <i class="fa-brands fa-bootstrap mx-2"></i>
+              <i class="fa-brands fa-sass mx-2"></i>
+            </div>
+            <div>
+              <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/proyectoFinal-JS"
+                  target="_blank" rel="noopener noreferrer">Repositorio</a></button>
+              <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/proyectoFinal-JS/" target="_blank"
+                  rel="noopener noreferrer">Ver demo</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <img class="img-fluid" src="./assets/img/projects-glam.jpg" alt="Pagina web para emprendimiento de mates.">
+          </div>
+          <div class="col-lg-4 d-block m-lg-auto mt-3">
+            <h4 class="fw-bold">Página web estática para emprendimiento de mates.</h4>
+            <p>Participación en proyecto Real | CoderHouse</p>
+            <div class="d-flex mb-3 display-6">
+              <i class="fa-brands fa-html5 me-2"></i>
+              <i class="fa-brands fa-css3-alt mx-2"></i>
+              <i class="fa-brands fa-bootstrap mx-2"></i>
+              <i class="fa-brands fa-js-square mx-2"></i>
+            </div>
+            <div>
+              <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/Glam-Mates" target="_blank"
+                  rel="noopener noreferrer">Repositorio</a></button>
+              <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/Glam-Mates/" target="_blank"
+                  rel="noopener noreferrer">Ver demo</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-8 order-lg-1">
+            <img class="img-fluid" src="./assets/img/projects-react.gif" alt="E-commerce de indumentaria en REACTJS">
+          </div>
+          <div class="col-lg-4 d-block m-lg-auto mt-3">
+            <h4 class="fw-bold">E-commerce de indumentaria en REACTJS</h4>
+            <p>Proyecto Final de curso "REACTJS" | CoderHouse</p>
+            <div class="d-flex mb-3 display-6">
+              <i class="fa-brands fa-react me-2"></i>
+              <i class="fa-brands fa-js-square mx-2"></i>
+              <i class="fa-brands fa-html5 mx-2"></i>
+              <i class="fa-brands fa-css3-alt mx-2"></i>
+              <i class="fa-brands fa-bootstrap mx-2"></i>
+            </div>
+            <div>
+              <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/HeyBro-Porta"
+                  target="_blank" rel="noopener noreferrer">Repositorio</a></button>
+              <button class="btn btn-danger"><a href="https://github.com/ramiroportaa/HeyBro-Porta" target="_blank"
+                  rel="noopener noreferrer">Ver demo</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <img class="img-fluid" src="./assets/img/projects-encriptador.jpg"
+              alt="Encriptador y desencriptador de frases con Javascript.">
+          </div>
+          <div class="col-lg-4 d-block m-lg-auto mt-3">
+            <h4 class="fw-bold">Encriptador y desencriptador</h4>
+            <p>Challenge del curso "Principiante en programación" de Alura</p>
+            <div class="d-flex mb-3 display-6">
+              <i class="fa-brands fa-html5 me-2"></i>
+              <i class="fa-brands fa-css3-alt mx-2"></i>
+              <i class="fa-brands fa-bootstrap mx-2"></i>
+              <i class="fa-brands fa-js-square mx-2"></i>
+            </div>
+            <div>
+              <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/encriptador-challenge"
+                  target="_blank" rel="noopener noreferrer">Repositorio</a></button>
+              <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/encriptador-challenge/"
+                  target="_blank" rel="noopener noreferrer">Ver demo</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-8 order-lg-1">
+            <img class="img-fluid" src="./assets/img/projects-ahorcado.gif" alt="Juego del ahorcado en Javascript">
+          </div>
+          <div class="col-lg-4 d-block m-lg-auto mt-3">
+            <h4 class="fw-bold">Juego del Ahorcado</h4>
+            <p>Challenge del curso "Principiante en programación" de Alura</p>
+            <div class="d-flex mb-3 display-6">
+              <i class="fa-brands fa-js-square me-2"></i>
+              <i class="fa-brands fa-html5 mx-2"></i>
+              <i class="fa-brands fa-css3-alt mx-2"></i>
+            </div>
+            <div>
+              <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/challenge-ahorcado"
+                  target="_blank" rel="noopener noreferrer">Repositorio</a></button>
+              <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/challenge-ahorcado/"
+                  target="_blank" rel="noopener noreferrer">Ver demo</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <img class="img-fluid" src="./assets/img/projects-chat.png"
+              alt="Chat desarrollado con websockets en nodejs.">
+          </div>
+          <div class="col-lg-4 d-block m-lg-auto mt-3">
+            <h4 class="fw-bold">Mini-desafio de chat con websocket</h4>
+            <p>Desafio del curso "Backend" de Coderhouse</p>
+            <div class="d-flex mb-3 display-6">
+              <i class="fa-brands fa-html5 me-2"></i>
+              <i class="fa-brands fa-css3-alt mx-2"></i>
+              <i class="fa-brands fa-bootstrap mx-2"></i>
+              <i class="fa-brands fa-js-square mx-2"></i>
+              <i class="fa-brands fa-node mx-2"></i>
+            </div>
+            <div>
+              <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/websocket-chat"
+                  target="_blank" rel="noopener noreferrer">Repositorio</a></button>
+              <button class="btn btn-danger"><a href="https://torch-political-prince.glitch.me/" target="_blank"
+                  rel="noopener noreferrer">Ver demo</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-8 order-lg-1">
+            <img class="img-fluid" src="./assets/img/projects-aurora.jpg" alt="Página web de Aurora Santeria">
+          </div>
+          <div class="col-lg-4 d-block m-lg-auto mt-3">
+            <h4 class="fw-bold">Página web estática para emprendimiento</h4>
+            <p>Participación en proyecto Real | CoderHouse</p>
+            <div class="d-flex mb-3 display-6">
+              <i class="fa-brands fa-js-square me-2"></i>
+              <i class="fa-brands fa-html5 mx-2"></i>
+              <i class="fa-brands fa-css3-alt mx-2"></i>
+              <i class="fa-brands fa-bootstrap mx-2"></i>
+            </div>
+            <div>
+              <button class="btn btn-outline-light"><a href="https://github.com/ramiroportaa/aurora-santeria"
+                  target="_blank" rel="noopener noreferrer">Repositorio</a></button>
+              <button class="btn btn-danger"><a href="https://ramiroportaa.github.io/aurora-santeria/" target="_blank"
+                  rel="noopener noreferrer">Ver demo</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contactMe" class="text-dark">
+      <div class="container col-xxl-10 m-auto py-5 position-relative">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <form class="w-lg-75 d-block m-auto bg-dark text-white p-3 rounded"
+              action="https://formsubmit.co/ramiroportaa@gmail.com" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="subject" name="subject">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message"></textarea>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn btn-danger px-4">Enviar</button>
+              </div>
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://ramiroportaa.github.io/portfolio/">
+            </form>
+          </div>
+          <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+            <h1 class="mb-3">Contacto</h1>
+            <p>¿Quieres contactarme? <br>
+              Completá el formulario y me pondré en contacto lo antes posible! <br>
+              Tambien podes escribirme por alguna de las siguientes redes:
+            </p>
+            <div class="contactMe__social">
+              <p class="d-flex align-items-center"><a href="https://www.linkedin.com/in/ramiroportaa/" target="_blank"
+                  rel="noopener noreferrer"><i data-tilt data-tilt-scale="1.1"
+                    class="fa-brands fa-linkedin display-6 me-2"></i></a> www.linkedin.com/in/ramiroportaa</p>
+              <p class="d-flex align-items-center"><a href="https://www.instagram.com/ramiroportaa/" target="_blank"
+                  rel="noopener noreferrer"><i data-tilt data-tilt-scale="1.1"
+                    class="fa-brands fa-instagram-square display-6 me-2"></i></a> @ramiroportaa</p>
+              <p class="d-flex align-items-center"><a href="mailto:ramiroportaa@gmail.com" target="_blank"
+                  rel="noopener noreferrer"><i data-tilt data-tilt-scale="1.1"
+                    class="fa-solid fa-envelope display-6 me-2"></i></a> ramiroportaa@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark py-4 text-white">
+    <p class="text-center m-0">Desarrollado por Ramiro Porta | 2022</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
 </html>

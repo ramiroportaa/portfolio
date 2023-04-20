@@ -89,7 +89,7 @@ p{
         opacity: 0;
     }
 }
-/* Efecto parpadero de barrita maquina de escribir */
+/* Efecto parpadeo de barrita maquina de escribir */
 .typewriter::after {
   content: "|";
   animation-name: parpadeo;
